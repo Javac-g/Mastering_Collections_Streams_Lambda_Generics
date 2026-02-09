@@ -1,6 +1,8 @@
 package com.collectionLabs;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class One {
 
@@ -14,6 +16,23 @@ public class One {
         int[] arr7 = new int[]{1,2};
 
     }
+    public static void two(){
+        List<String> list = new ArrayList<>();
+        list.add("Max");
+        list.add("Anna");
+        list.add("Sofi");
+
+        String[] arr = list.toArray(new String[0]);
+
+    }
+    public static void three(){
+        String[] arr = {"Mila", "Dasha", "Ivan"};
+        List<String> list = Arrays.asList(arr);
+        //array backed List are linked. When a change is made to one, it is available in the other.
+        //we are not allowed to change the size of the list.
+        List<String> list2 = Arrays.asList("one", "two");
+    }
+
     public static void main(String... args){
 
 
